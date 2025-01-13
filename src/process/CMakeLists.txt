@@ -13,3 +13,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 target_link_libraries(${PROJECT_NAME} PUBLIC
     pnc_map
 )
+# 写了这行代码，process.cpp中加入头文件就不会报错了
+target_link_libraries(${PROJECT_NAME} PUBLIC
+    Eigen3::Eigen
+)
